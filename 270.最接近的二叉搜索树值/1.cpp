@@ -1,12 +1,15 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
+#include <iostream>
+#include <cmath>
+using namespace std;
+// Definition for a binary tree node.
+struct TreeNode
+{
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
 // 利用二叉搜索树的特殊性质，使用二分查找
 class Solution
 {
