@@ -7,6 +7,7 @@ dp[0] 为空的 vector<string>，dp[1]={"()"}
 dp[i] 可以由向 dp[i-1] 的所有合法组合中插入一对括号得到。先插左括号，再在左括号后插右括号。
 每得到一个结果都与之前的结果比较，防止重复。
 由于 dp[i] 只与 dp[i-1] 有关，所以可以只用一个 vector<string> ans 来代替整个 dp 数组。
+这种动规方法十分慢。。。
 */
 #include <set>
 #include <vector>
